@@ -39,6 +39,10 @@ function defaultErrorHandler(error) {
 	}
 }
 
+// The difference between the default `true` Boolean and a custom function for the error handler:
+// - The default handler logs errors without stopping the stream.
+// - A custom function can log errors and end the stream, allowing it to continue.
+
 function plumber(opts) {
 	opts = opts || {};
 

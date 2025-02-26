@@ -54,6 +54,16 @@ Handle errors in underlying streams and output them to console.
  * `false` - error handler will not be attached.
  * `true` - default error handler will be attached.
 
+### Explanation of error handling
+
+The difference between using the default `true` Boolean for the error handler and using a custom function is in how errors are handled and logged.
+
+* The default `true` Boolean uses the `defaultErrorHandler` in `index.js` to log errors without stopping the stream.
+* A custom function with `this.emit('end')` logs errors and ends the stream, allowing it to continue.
+* A custom function provides more control over error handling behavior.
+* The default handler is simpler but less flexible.
+* Both options attach error handlers to the stream's `on('error')` event.
+
 ### plumber.stop()
 
 This method will return default behaviour for pipeline after it was piped.
