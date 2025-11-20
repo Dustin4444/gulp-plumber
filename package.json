@@ -27,7 +27,7 @@
     "through2": "^2.0.3"
   },
   "devDependencies": {
-    "coveralls": "^2.11.6",
+    "coveralls": "^3.0.0",
     "event-stream": "3.3.4",
     "gulp": "^3.9.1",
     "istanbul": "^0.4.2",
@@ -35,7 +35,7 @@
     "mocha-lcov-reporter": "^1.0.0",
     "should": "^8.2.2",
     "through": "^2.3.8",
-    "xo": "^0.12.1"
+    "xo": "^0.61.0"
   },
   "engines": {
     "node": ">=0.10",
